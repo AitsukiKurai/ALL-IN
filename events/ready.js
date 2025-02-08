@@ -6,39 +6,32 @@ module.exports = {
     execute(client) {
   
         const activities = [
-            { name: 'Netflix', type: ActivityType.Watching },
-            { name: 'GTA VI', type: ActivityType.Playing },
-            { name: 'on YouTube', type: ActivityType.Streaming },
-            { name: 'Spotify', type: ActivityType.Listening },
+            { name: '繁栄と許しを祈ります...' },
         ];
 
      
-        const statuses = ['online', 'idle', 'dnd'];
+        const statuses = ['online'];
 
      
-        let currentActivityIndex = 0;
         let currentStatusIndex = 0;
 
  
-        function setActivityAndStatus() {
+        function setStatus() {
         
-            const activity = activities[currentActivityIndex];
             const status = statuses[currentStatusIndex];
 
           
             client.user.setPresence({
-                activities: [activity],
                 status: status,
             });
 
             
-            currentActivityIndex = (currentActivityIndex + 1) % activities.length;
             currentStatusIndex = (currentStatusIndex + 1) % statuses.length;
         }
 
         
         setTimeout(() => {
-            setActivityAndStatus();
+            setStatus();
             console.log('\n' + '─'.repeat(40));
             console.log(`${colors.magenta}${colors.bright}🔗  ACTIVITY STATUS${colors.reset}`);
             console.log('─'.repeat(40));
