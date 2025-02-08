@@ -7,24 +7,24 @@
     "excessCommands": {
         "utility": true,
         "other": true,
-        "hentai": true,
-        "lavalink": true,
-        "troll": true,
-        "levelling" : true,
+        "hentai": false,
+        "lavalink": false,
+        "troll": false,
+        "levelling" : false,
         "economy" : true,
-        "application" : true,
-        "birthday" : true,
-        "gaming" : true,
+        "application" : false,
+        "birthday" : false,
+        "gaming" : false,
         "customcommands" : true,
-        "report" : true
+        "report" : false
     },
     "categories": {
-        "anime": true,
+        "anime": false,
         "basic": true,
         "utility": true,
         "moderation": true,
-        "fun": true,
-        "distube music": true,
+        "fun": false,
+        "distube music": false,
         "setups": true
     },
      "lavalink": {
